@@ -145,6 +145,16 @@ class MainActivity() : ComponentActivity(), Parcelable {
 
             Spacer(modifier = Modifier.height(20.dp))
 
+            Text(
+                text= "Добавить элемент списка",
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp,
+                color = Color.Red
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
             OutlinedTextField(
                 value = currentValue,
                 onValueChange = {currentValue = it},
@@ -160,14 +170,25 @@ class MainActivity() : ComponentActivity(), Parcelable {
                 }
             )
 
+
             Spacer(modifier = Modifier.height(20.dp))
 
             Text(
-                text= "Добавить",
+                text= "Текст вводится по нажатию на ENTER",
                 textAlign = TextAlign.Center,
                 fontWeight = FontWeight.Bold,
-                fontSize = 20.sp,
-                color = Color.Red
+                fontSize = 16.sp,
+                color = Color.Blue
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            Text(
+                text= "Для удаления элемента кликните по нему",
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
+                color = Color.Blue
             )
 
         }
