@@ -160,6 +160,16 @@ class MainActivity() : ComponentActivity(), Parcelable {
                 }
             )
 
+            Spacer(modifier = Modifier.height(20.dp))
+
+            Text(
+                text= "Добавить",
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp,
+                color = Color.Red
+            )
+
         }
     }
     }
